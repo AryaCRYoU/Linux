@@ -1074,25 +1074,18 @@ def help():
 
 def login():
     clear()
-    user = "root"
-    passwd = "password"
+    user = "*"
+    passwd = "*"
     username = input("⚡ Username: ")
     password = getpass.getpass(prompt='⚡ Password: ')
     if username != user or password != passwd:
         print("")
-        print("⚡ PROSES...... ")
-        time.sleep(6)
-        print("⚡ LOGIN GAGAL SILAHKAN ROOT TERLEBIH DAHULU ")
+        print("⚡ PW SALAH⛔⛔⛔⛔⛔⛔⛔⛔")
         sys.exit(1)
     elif username == user and password == passwd:
         print("⚡ Welcome Bro To VyXDDoS C2")
         time.sleep(0.3)
-        ascii_vro() 
+        ascii_vro()
         main() 
 
 login()
-
-
-
-
-
