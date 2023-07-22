@@ -1074,16 +1074,16 @@ def help():
 
 def login():
     clear()
-    user = "*"
-    passwd = "*"
+    user = "ddos"
+    passwd = "ddosc2"
     username = input("⚡ Username: ")
     password = getpass.getpass(prompt='⚡ Password: ')
     if username != user or password != passwd:
         print("")
-        print("⚡ PW SALAH⛔⛔⛔⛔⛔⛔⛔⛔")
+        print("⚡ UNKNOWN LOGIN BYE⛔")
         sys.exit(1)
     elif username == user and password == passwd:
-        print("⚡ Welcome Bro To VyXDDoS C2")
+        print("⚡ Welcome Bro To levyx C2")
         time.sleep(0.3)
         ascii_vro()
         main() 
