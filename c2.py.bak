@@ -765,7 +765,6 @@ def main():
             except IndexError:
                 print('Usage: WALZ <url> METHODS<GET/POST>')
                 print('Example: WALZ http://example.com GET')        
-
         elif "TLS-VIP" in cnc:
             try:
                 url = cnc.split()[1]
